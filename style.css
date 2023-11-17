@@ -17,7 +17,6 @@ body {
 
 .container {
     width: 450px;
-    max-width: 100%;
     margin: 40px auto;
     text-align: center;
     background-color: white;
@@ -47,7 +46,7 @@ h1 {
     justify-content: space-around;
     padding: 1rem 0;
     background-color: hsl(225, 100%, 98%);
-    width: 85%;
+    /* width: 85%; */
     max-width: 85%;
     border-radius: 10px;
 }
@@ -77,4 +76,40 @@ button {
     color: hsl(224, 23%, 55%);
     font-weight: 700;
 
+}
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    .container {
+        width: 300px;
+        margin: 10em auto;
+    }
+
+    .top img {
+        width: 299px;
+    }
+
+    .bottom {
+        padding: 0 0.9em;
+    }
+
+    h1 {
+        font-weight: 700;
+        margin: 1rem 10px;
+    }
+
+    .mid-section p {
+        margin: 0 2px;
+    }
+
+    .double p {
+        margin-left: 0;
+    }
+
+    .grey-section {
+        padding: 1rem 1px;
+    }
+
+    button {
+        padding: 10px 15%;
+    }
 }
